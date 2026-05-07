@@ -1,0 +1,9 @@
+[package]
+org = "samith"
+name = "commons"
+version = "0.1.0"
+distribution = "2201.13.4"
+title = "Commons"
+
+[build-options]
+sticky = true

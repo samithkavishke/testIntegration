@@ -1,0 +1,9 @@
+[package]
+org = "samith"
+name = "taskmanager"
+version = "0.1.0"
+distribution = "2201.13.4"
+title = "TaskManager"
+
+[build-options]
+sticky = true
