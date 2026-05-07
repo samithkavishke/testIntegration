@@ -78,3 +78,13 @@ service /tasks on taskListener {
         return http:OK;
     }
 }
+
+listener http:Listener httpDefaultListener = http:getDefaultListener();
+
+service / on httpDefaultListener {
+}
+
+listener http:Listener httpDefaultListener1 = http:getDefaultListener();
+
+service / on httpDefaultListener1 {
+}

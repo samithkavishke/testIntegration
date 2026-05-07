@@ -1,5 +1,8 @@
 import ballerina/file;
+import ballerina/graphql;
 import ballerina/log;
+
+import samith/commons;
 
 listener file:Listener fileListener = new (path = "./tmp", recursive = false);
 
@@ -14,3 +17,14 @@ service file:Service on fileListener {
     }
 
 }
+
+listener graphql:Listener graphqlListener = new (8080);
+
+service /graphql on graphqlListener {
+    resource function get Q1() returns commons:TaskSummary {
+    }
+
+    resource function subscribe S1() returns MyType {
+    }
+}
+
